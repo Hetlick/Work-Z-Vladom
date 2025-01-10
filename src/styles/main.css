@@ -1,0 +1,20 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 11 | /     @include desktop {
+ * 12 | |       font-size: .8333vw;
+ * 13 | \     }
+ *    '
+ *   src\styles\base\base.scss 11:5  @import
+ *   src\styles\base\_main.scss 2:9  @import
+ *   src\styles\main.scss 1:9        root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 11 \2502  \250c      @include desktop {\a 12 \2502  \2502        font-size: .8333vw;\a 13 \2502  \2514      }\a    \2575 \a   src\\styles\\base\\base.scss 11:5  @import\a   src\\styles\\base\\_main.scss 2:9  @import\a   src\\styles\\main.scss 1:9        root stylesheet";
+}
